@@ -8,6 +8,6 @@
 import Foundation
 import Observation
 
-@Observable final class ContactViewViewMidel {
+@Observable final class ContactViewViewModel {
     var contactList = Person.generateContactList()
 }

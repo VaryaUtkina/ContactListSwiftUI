@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct ContactView: View {
-    @State private var contactViewVM = ContactViewViewMidel()
+    @State private var contactViewVM = ContactViewViewModel()
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(contactViewVM.contactList, id: \.self) { person in
+                NavigationLink(destination: PersonDetailsView(person: person)) {
+                    PersonRowView(person: person)
+                }
+            }
+            .listStyle(.plain)
+            .navigationTitle("Contact List")
         }
-        .padding()
     }
 }
 
