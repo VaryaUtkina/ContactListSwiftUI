@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ContactView: View {
-    @State private var contactViewVM = ContactViewViewModel()
+    let contacts: [Person]
     
     var body: some View {
         NavigationStack {
-            List(contactViewVM.contactList, id: \.self) { person in
+            List(contacts, id: \.self) { person in
                 NavigationLink(destination: PersonDetailsView(person: person)) {
                     PersonRowView(person: person)
                 }
@@ -25,6 +25,6 @@ struct ContactView: View {
 
 struct ContactView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactView()
+        ContactView(contacts: Person.generateContactList())
     }
 }

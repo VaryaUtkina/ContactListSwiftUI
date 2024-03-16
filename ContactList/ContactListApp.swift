@@ -11,7 +11,13 @@ import SwiftUI
 struct ContactListApp: App {
     var body: some Scene {
         WindowGroup {
-            ContactView()
+            HomeView()
         }
+    }
+}
+
+struct ContactListApp_Previews: PreviewProvider {
+    static var previews: some View {
+        HomeView()
     }
 }

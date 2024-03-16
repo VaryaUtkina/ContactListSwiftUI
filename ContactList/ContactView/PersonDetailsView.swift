@@ -12,21 +12,13 @@ struct PersonDetailsView: View {
     
     var body: some View {
         List {
-            Section {
-                VStack {
-                    Image(systemName: "person.fill")
-                        .resizable()
-                        .frame(width: 150, height: 150)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                }
-                Section {
-                    CustomLabel(text: person.phoneNumber, imageName: "phone")
-                }
-                Section {
-                    CustomLabel(text: person.email, imageName: "tray")
-                }
-            }
+            Image(systemName: "person.fill")
+                .resizable()
+                .frame(width: 150, height: 150)
+                .frame(maxWidth: .infinity)
+                .padding()
+            CustomLabel(text: person.phoneNumber, imageName: "phone")
+            CustomLabel(text: person.email, imageName: "tray")
         }
         .navigationTitle(person.fullName)
     }

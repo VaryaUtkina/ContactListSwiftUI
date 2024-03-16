@@ -16,6 +16,8 @@
 		486C9FB62BA5A5C8001DD96E /* ContactViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C9FB52BA5A5C8001DD96E /* ContactViewViewModel.swift */; };
 		486C9FB82BA5A98D001DD96E /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C9FB72BA5A98D001DD96E /* PersonDetailsView.swift */; };
 		486C9FBA2BA5B8AB001DD96E /* PersonRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C9FB92BA5B8AB001DD96E /* PersonRowView.swift */; };
+		486C9FBC2BA5BEB9001DD96E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C9FBB2BA5BEB9001DD96E /* HomeView.swift */; };
+		486C9FBE2BA5D3CC001DD96E /* SectionedContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486C9FBD2BA5D3CC001DD96E /* SectionedContactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		486C9FB52BA5A5C8001DD96E /* ContactViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewViewModel.swift; sourceTree = "<group>"; };
 		486C9FB72BA5A98D001DD96E /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		486C9FB92BA5B8AB001DD96E /* PersonRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRowView.swift; sourceTree = "<group>"; };
+		486C9FBB2BA5BEB9001DD96E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		486C9FBD2BA5D3CC001DD96E /* SectionedContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +102,11 @@
 		486C9FB02BA5A479001DD96E /* ContactView */ = {
 			isa = PBXGroup;
 			children = (
+				486C9FBB2BA5BEB9001DD96E /* HomeView.swift */,
 				486C9FA22BA5A359001DD96E /* ContactView.swift */,
 				486C9FB92BA5B8AB001DD96E /* PersonRowView.swift */,
 				486C9FB72BA5A98D001DD96E /* PersonDetailsView.swift */,
+				486C9FBD2BA5D3CC001DD96E /* SectionedContactView.swift */,
 				486C9FB52BA5A5C8001DD96E /* ContactViewViewModel.swift */,
 			);
 			path = ContactView;
@@ -181,6 +187,8 @@
 				486C9FB42BA5A509001DD96E /* DataStore.swift in Sources */,
 				486C9FB62BA5A5C8001DD96E /* ContactViewViewModel.swift in Sources */,
 				486C9FA32BA5A359001DD96E /* ContactView.swift in Sources */,
+				486C9FBE2BA5D3CC001DD96E /* SectionedContactView.swift in Sources */,
+				486C9FBC2BA5BEB9001DD96E /* HomeView.swift in Sources */,
 				486C9FBA2BA5B8AB001DD96E /* PersonRowView.swift in Sources */,
 				486C9FA12BA5A359001DD96E /* ContactListApp.swift in Sources */,
 			);
