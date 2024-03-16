@@ -20,6 +20,7 @@ struct SectionedContactView: View {
                     }
                 }
             }
+            .listStyle(.plain)
             .navigationTitle("Contact List")
         }
     }
