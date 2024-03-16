@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContactView: View {
+    @State private var contactViewVM = ContactViewViewMidel()
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -19,6 +21,8 @@ struct ContentView: View {
     }
 }
 
-#Preview {
-    ContentView()
+struct ContactView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContactView()
+    }
 }
