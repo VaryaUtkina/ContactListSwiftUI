@@ -12,12 +12,10 @@ struct SectionedContactView: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(contacts) { person in
-                    Section(header: Text(person.fullName)) {
-                        Label(person.phoneNumber, systemImage: "phone")
-                        Label(person.email, systemImage: "tray")
-                    }
+            List(contacts) { person in
+                Section(header: Text(person.fullName).font(.headline)) {
+                    Label(person.phoneNumber, systemImage: "phone")
+                    Label(person.email, systemImage: "tray")
                 }
             }
             .listStyle(.plain)
