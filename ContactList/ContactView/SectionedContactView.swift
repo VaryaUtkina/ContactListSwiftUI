@@ -13,10 +13,10 @@ struct SectionedContactView: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(contacts, id: \.self) { person in
+                ForEach(contacts) { person in
                     Section(header: Text(person.fullName)) {
-                        CustomLabel(text: person.phoneNumber, imageName: "phone")
-                        CustomLabel(text: person.email, imageName: "tray")
+                        Label(person.phoneNumber, systemImage: "phone")
+                        Label(person.email, systemImage: "tray")
                     }
                 }
             }

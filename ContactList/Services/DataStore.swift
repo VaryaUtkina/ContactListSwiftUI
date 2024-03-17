@@ -10,7 +10,7 @@ import Foundation
 final class DataStore {
     static let shared = DataStore()
     
-    let names: [String] = [
+    let names = [
         "Sharon",
         "Ted",
         "Tim",
@@ -22,7 +22,7 @@ final class DataStore {
         "Aaron",
         "Steven"
     ]
-    let surnames: [String] = [
+    let surnames = [
         "Robertson",
         "Murphy",
         "Penniwotrh",
@@ -34,7 +34,7 @@ final class DataStore {
         "Williams",
         "Dow"
     ]
-    let phoneNumbers: [String] = [
+    let phoneNumbers = [
         "2342341",
         "6543564",
         "8907689",
@@ -46,7 +46,7 @@ final class DataStore {
         "8462776",
         "2218613"
     ]
-    let emails: [String] = [
+    let emails = [
         "eeee@mail.ru",
         "rrrr@mail.ru",
         "tttt@mail.ru",

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    let contacts = Person.generateContactList()
+    private let contacts = Person.generateContactList()
     
     var body: some View {
         TabView {

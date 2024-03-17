@@ -12,32 +12,22 @@ struct PersonDetailsView: View {
     
     var body: some View {
         List {
-            Image(systemName: "person.fill")
-                .resizable()
-                .frame(width: 150, height: 150)
-                .frame(maxWidth: .infinity)
-                .padding()
-            CustomLabel(text: person.phoneNumber, imageName: "phone")
-            CustomLabel(text: person.email, imageName: "tray")
+            HStack {
+                Spacer()
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .padding()
+                Spacer()
+            }
+            
+            Label(person.phoneNumber, systemImage: "phone")
+            Label(person.email, systemImage: "tray")
         }
         .navigationTitle(person.fullName)
     }
 }
 
-struct CustomLabel: View {
-    var text: String
-    var imageName: String
-    
-    var body: some View {
-        HStack {
-            Image(systemName: imageName)
-                .foregroundColor(.blue)
-            Text(text)
-        }
-    }
-}
-
-
 #Preview {
-    PersonDetailsView(person: Person.generatePerson())
+    PersonDetailsView(person: Person.generateContactList().first!)
 }

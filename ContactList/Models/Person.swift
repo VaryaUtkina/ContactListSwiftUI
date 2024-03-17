@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Person: Hashable {
+struct Person: Identifiable {
+    let id = UUID()
     let name: String
     let surname: String
     let phoneNumber: String
@@ -43,18 +44,5 @@ struct Person: Hashable {
                people.append(currentPerson)
             }
         return people
-    }
-    
-    static func generatePerson() -> Person {
-        let dataStore = DataStore.shared
-        
-        let person = Person(
-            name: dataStore.names.randomElement() ?? "",
-            surname: dataStore.surnames.randomElement() ?? "",
-            phoneNumber: dataStore.phoneNumbers.randomElement() ?? "",
-            email: dataStore.emails.randomElement() ?? ""
-        )
-        
-        return person
     }
 }
